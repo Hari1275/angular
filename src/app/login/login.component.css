@@ -1,0 +1,33 @@
+h1{
+    margin: auto;
+    padding-top: 14%;
+    margin-left: 42%;
+    color: rgb(28, 28, 138);
+    padding-bottom: 2%;
+}
+.example-full-width
+{
+    width: 100%;
+}
+#login{
+    /* background-image: linear-gradient(rgb(172, 163, 163),rgb(235, 167, 43) ); */
+    background-image: url("../../assets/construction.jpg");
+    height: 100%;
+    width: 100%;
+}
+::ng-deep #logincard{
+    border: 15px solid #b6ccab;
+    border-radius: 30px !important;
+}
+#logincard{
+    width: 100%;
+    background-color:white;
+    height:80%;
+    margin: auto;
+}
+#logincard img{
+    margin-left: 25%;
+    margin-bottom: 3%;
+}
+
+

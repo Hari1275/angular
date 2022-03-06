@@ -1,0 +1,30 @@
+<div id="login">
+    <img src="assets/logo.jpg" width="5%" height="10%" style="padding-top: -20px;">
+    <tr>
+      <td style="width:58%;"></td>
+      <td style="width: 30%;margin-left: 70%;height:0%;">
+        <mat-card id="logincard" >
+          <h1>Login</h1>
+          <img src="assets/logo.png" width="50%" height="22%"><br>
+          <mat-form-field appearance="outline" class="example-full-width">
+            <mat-label>Username</mat-label>
+            <input matInput [(ngModel)]="username">
+            <span matPrefix>
+              <mat-icon>person</mat-icon>
+            </span>
+          </mat-form-field><br>
+          <mat-form-field appearance="outline" class="example-full-width">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" [(ngModel)]="password" (keyup.enter)="login()">
+            <span matPrefix>
+              <mat-icon>lock</mat-icon>
+            </span>
+          </mat-form-field>
+          <button  #focusableSubmit mat-raised-button color="primary" class="btn-block" (click)="login()" >Login <mat-icon>login</mat-icon>
+          </button>
+        </mat-card>
+      </td>
+      <td></td>
+    </tr>
+  </div>
+  

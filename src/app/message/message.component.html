@@ -1,0 +1,8 @@
+<h2 style="height:2%;">Order Id : {{id}}</h2>
+<mat-card style="width:90%;height:70%;background-color: rgb(178, 250, 250);overflow-y: auto;">
+ 
+    <div *ngFor="let msg of iddata">
+        <p>{{msg.date_created}}:::{{msg.note}}</p>
+    </div>   
+</mat-card><br>
+<input type="text" id="ip3" [(ngModel)]='searchValue' /><button mat-raised-button (click)="send(searchValue)">&nbsp;&nbsp;<mat-icon style="color: blue;padding-top: 10%;">send</mat-icon></button>

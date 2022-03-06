@@ -1,0 +1,93 @@
+
+<div style="height: 10%;"><mat-toolbar color="#1d9ad7" style="position: fixed;background-color:rgb(78, 112, 143);color: white;"> 
+     <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button> -->
+    <img src="../../assets/logo.jpg" class="img1" alt="cinque terre">  
+    <span>Ketoo Constructions</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button><p style="color: red;font-size: 15px;">Hi,&nbsp;{{name}}</p>&nbsp;&nbsp;&nbsp;&nbsp;
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" (click)="logout()">
+     <mat-icon style="background-color:darkturquoise;">logout</mat-icon>
+    </button>
+  </mat-toolbar></div>
+            <!-- <mat-grid-tile>
+                <mat-form-field appearance="outline" id="input">
+                    <mat-label>Gender</mat-label>
+                    <mat-select #fontSize value="" (selectionChange)="triggerResize()" id="input1">
+                      <mat-option value="0">Female</mat-option>
+                      <mat-option value="1">Male</mat-option>
+                      <mat-option value="2">Others</mat-option>
+                      <mat-option value="3">Unknown</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </mat-grid-tile> -->
+            <table id="customers">
+              <tr>
+                <th>Order#</th>
+                <th>Customer Name</th>
+                <th *ngIf="flag">Address</th>
+                <th>Contact</th>
+                <th>Order Date</th>
+                <th>Executive Name</th>
+                <th>Order Status</th>
+                <th *ngIf="flag">Update Executives</th>
+                <th>Update Status</th>
+                <th>Chat</th>
+              </tr>
+              <tr *ngFor="let data of orderdata">
+                <td>{{data.id}}</td>
+                <td>{{data.shipping.first_name}}</td>
+                <td *ngIf="flag">{{data.shipping.address1}}</td>
+                <td>{{data.shipping.phone}}</td>
+                <td>{{date_created}}</td>
+                <td>{{data.customer_note}}</td>
+                <td>{{data.status}}</td>
+                <td *ngIf="flag">
+                  <mat-form-field appearance="outline" id="input">
+                    <mat-label>Executive</mat-label>
+                    <mat-select #fontSize value="" (selectionChange)="updateexecutive($event,data.id)" id="input1">
+                      <mat-option value="Executive1">Executive1</mat-option>
+                      <mat-option value="Executive2">Executive2</mat-option>
+                      <mat-option value="Executive3">Executive3</mat-option>
+                    </mat-select>
+                  </mat-form-field>                  
+                </td>
+                <td>
+                  <mat-form-field appearance="outline" id="input">
+                    <mat-label>Status</mat-label>
+                    <mat-select #fontSize value="" (selectionChange)="updatestatus($event,data.id)" id="input1">
+                      <mat-option value="pending">pending</mat-option>
+                      <mat-option value="on-hold">on-hold</mat-option>
+                      <mat-option value="out-for-delivery">out-for-delivery</mat-option>
+                      <mat-option value="driver-assigned">driver-assigned</mat-option>
+                      <mat-option value="failed-delivery">failed-delivery</mat-option>
+                      <mat-option value="completed">completed</mat-option>
+                      <mat-option value="cancelled">cancelled</mat-option>
+                    </mat-select>
+                  </mat-form-field>                  
+                </td>
+                <td>
+                  <button mat-raised-button style="margin-left: 10px;border: 1px solid white;background-color: rgb(138, 219, 15);" (click)="message(data.id)"><mat-icon style="color: white;">message</mat-icon></button>
+
+                </td>
+              </tr>
+            </table>
+
+
+
+
+
+
+
+<div style="height: 10%;"><mat-toolbar style="position: fixed;background-color:rgba(168, 168, 168, 0.274);"> 
+    <button mat-raised-button color="primary" style="margin-left:88%;border: 1px solid white;">Save</button>
+    
+ </mat-toolbar></div>
+
+
+
+
+  

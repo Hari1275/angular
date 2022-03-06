@@ -1,0 +1,82 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  #patient-card{
+    height: auto;
+    background-color: rgb(253, 249, 239);
+    border: 1px solid orange;
+  }
+  #Subscribers-card{
+    height: auto;
+    background-color: rgb(253, 249, 239);
+    border: 1px solid orange;
+    
+  }
+  #case-card{
+    background-color: rgb(253, 249, 239);
+    border: 1px solid orange;
+  }
+  #subscribers{
+  height: 200px;
+  background-color: rgb(253, 249, 239);
+  border: 1px solid orange;
+  }
+  #primary-parameter{
+      height: 230px;
+      width: 45%;
+      background-color: rgb(255, 255, 200);
+      border: 1px solid orange;
+  }
+  ::ng-deep .mat-input-wrapper{
+    width:40px !important;
+    height: 1px;
+  }
+mat-form-field{
+    height: calc(100% - 1.34375em - 1px);
+}
+#input{
+    font-size: 11px;
+    width: 180px;
+    font-weight: bold;
+    color: blue;
+}
+#input2{
+    font-size: 11px;
+    width: 250px;
+    font-weight: bold;
+    color: blue;
+}
+#input1{
+color: blue;
+}
+/* input{
+    background-color: white;
+} */
+p{
+    color: gray;
+    font-weight: bold;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 5px;
+  font-size: 15px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
